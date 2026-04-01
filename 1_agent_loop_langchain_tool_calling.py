@@ -15,7 +15,7 @@ MODEL = "gpt-4.1-mini"
 @tool
 def get_product_price(product: str) -> float:
     """Lookup the price of a product in the catalog.
-  """
+    Examples: 'laptop', 'headphones', 'keyboard'."""
     print(f"    >>Executing get_product_price(product='{product}')")
     prices = {"laptop": 1299.99, "headphones": 149.95, "keyboard": 89.50}
     return prices.get(product, 0)
